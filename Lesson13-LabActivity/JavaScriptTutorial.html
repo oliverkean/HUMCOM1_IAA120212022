@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial | Oliver Kean L. Palgue</title>
+    <style>
+        *{
+            font-size: 60pt;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        document.write("Hello World!")
+        document.write("<br>")
+        var myVariable // undefined if empty, can be integer, boolean, float, double, char, and String 
+
+        // concatenate variables
+        var words = "This is "
+        var moreWords = "a sentence."
+        var sentence = words + moreWords
+        document.write(sentence)
+        document.write("<br>")
+        
+        // operators
+        var num1 = 5
+        var num2 = 3
+        var sum = num1 + num2
+        var minus = num1 - num2
+        var product = num1 * num2
+        var division = num1/num2
+        var mod = num1%num2
+        document.write("The sum is: " + sum)
+        document.write("<br>")
+        document.write("The difference is: " + minus)
+        document.write("<br>")
+        document.write("The product is: " + product)
+        document.write("<br>")
+        document.write("The quotient is: " + division)
+        document.write("<br>")
+        document.write("The modulo is: " + mod)
+        document.write("<br>")
+         
+
+        //increment and decrement
+        var increment = ++num1
+        var decrement = --num2
+        document.write( increment + " and " + decrement)
+        document.write("<br>")
+        
+        // methods in JavaScript
+        var alpha = "ABCDEFG" 
+        //length method
+        var length = alpha.length
+        //substring method
+        var result = alpha.substring(0,5)
+        
+        document.writeln(result)
+        document.writeln(length)
+        document.write("<br>")
+        
+        //arrays
+        var a = new Array(7)
+        a[0] = "cat"
+        a[1] = "dog"
+        a[2] = 95
+        a[3] = 'a'
+        a[4] = 'b'
+        a[5] = "snake"
+        a[6] = true
+        document.write(a[1] + " ")
+
+        var b = new Array("dog", "cat", 65, true)
+        document.write(b[1] + " ")
+
+        var c = ["dog", "cat", 65, true ]
+        document.write(c[1] + " ")
+        document.write("<br>")
+        
+        //functions
+        function sayHello(who) {
+            document.write("Hello" + who)
+        }
+        sayHello(", Ken")
+
+        
+        //if and else statements
+        var d = "Jake"
+        if(d == "Jake"){
+        alert(d)
+        }else{
+        alert("The condition was false")
+        }
+        document.write("<br>")
+
+        //loops
+        for(i=1; i<=5; i++){
+        document.write("This is iteration " + i + "<br>")
+        }
+
+    </script>
+</body>
+</html>
