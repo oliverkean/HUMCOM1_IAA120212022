@@ -4,53 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/mountain.png">
+    <link rel="icon" href="./images/assets/mountain.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>TravelCations | Baguio City</title>
 </head>
-<body>
-    <header>
-        <h3><a href="">TRAVELCATIONS</a></h3>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Location Map</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body id="top">
+   <header>
+       <div class="logo"><a href="#top"><h1>TRAVELCATIONS</h1></a></div>
+       <nav>
+           <ul>
+               <li><a href="#top">Home</a></li>
+               <li><a href="index.html">Gallery</a></li>
+               <li><a href="index.html">About Us</a></li>
+               <li><a href="index.html">Contacts</a></li>
+               <li><a href="index.html">Schedule</a></li>
+           </ul>
+       </nav>
 
-    <div id="bg_image">
-        <div class="text">
-            <h1>Baguio City</h1>
-            <p>The Summer Capital of The Philippines</p>
+       <div class="menu_icon" onclick="toggleMobileMenu(this)">
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+           <ul class="mobile_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Contacts</a></li>
+                <li><a href="index.html">Schedule</a></li>
+           </ul>
+       </div>
+   </header>
+
+   <section class="section1">
+       <div class="sect_text">
+           <h1>Welcome to Baguio City</h1>
+           <p>The Summer Capital of the Philippines</p>
+       </div>
+   </section>
+
+   <section class="strawberry_section">
+        <div class="greet">
+            <p>Baguio City</p>
+                <div class="barline"></div>
+            <h1>Come <br>and<br> Enjoy</h1>
+                <div class="barline1"></div>
         </div>
-    </div>
 
-    <div id="section1">
-        <div class="text_sect1">
-            <h3>What to Do in Baguio</h3>
-            <p>There are lots of things to do here in Baguio City</p>
+        <div class="icons scroll_reveal">
+            <div class="icon-container">
+                <div class="disp-icon">
+                    <div class="icon-border">
+                        <img src="./images/assets/hiking.png" alt="hiking">
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="h2_icon">Go Hiking</h2>
+                        <p class="p_icon">Explore different outdoor activities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-container">
+                <div class="disp-icon">
+                    <div class="icon-border">
+                        <img src="./images/assets/temperature.png" alt="hiking">
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="h2_icon">Experience the Cold Weather</h2>
+                        <p class="p_icon">Feel the breeze of the cold weather in the city</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-container">
+                <div class="disp-icon">
+                    <div class="icon-border">
+                        <img src="./images/assets/location.png" alt="hiking">
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="h2_icon">Go to Different Places</h2>
+                        <p class="p_icon">Walk around the City, there are lots of places to go</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+   </section>
 
-        <div id="images">
-            <img src="./images/wallpaper1.png" alt="">
-            <img src="./images/wallpaper2.jpg" alt="">
-            <img src="./images/wallpaper3.jpg" alt="">
-        </div>
-    </div>
 
-    <footer>
-        <p>This website is not yet in its final output</p>
-        <p>Images are not, all image are credited to the rightful owners</p>
-    </footer>
-
-    <script type="text/javascript" src="./javascript/javascript.js">
-    </script>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>
