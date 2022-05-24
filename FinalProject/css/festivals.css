@@ -29,12 +29,19 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
+    "intro"
     "section1"
-    "slider"
-    "section-gallery"
+    "link"
     "footer";
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.90) ,rgba(0,0,0,0.55)), url('../images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
 }
 
 header{
@@ -114,7 +121,7 @@ header{
 .open .mobile_menu{
     display: block;
     position: absolute;
-    top: 90%;
+    top: 95%;
     left: 0;
     height: 80vh;
     width: 100%;
@@ -134,6 +141,7 @@ header{
     color: white;
 }
 
+
 .mobile_menu li{
     margin: 20px 0;
 }
@@ -141,130 +149,6 @@ header{
 .mobile_menu li:hover{
  transform: scale(1.1);
  transition: 0.3s;
-}
-
-.section1{
-    grid-area: section1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 100px auto;
-    position: relative;
-    top: 50px;
-    
-}
-
-.barline{
-    width: 255px;
-    height: 3px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section1 div h2{
-    text-align: center;
-    font-size: 15pt;
-    letter-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.section1 div h2 span{
-    color:#006946;
-}
-.section2{
-    grid-area: slider;
-    display: flex;
-    justify-content: center;
-
-}
-.slider-section{
-    position: relative;
-    width: 350px;
-}
-.slider {
-	overflow: hidden;
-}
-.slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 15s slider infinite ease;
-}
-.slider figure img {
-	width: 20%;
-    height: 40vh;
-	float: left;
-}
-
-
-@keyframes slider {
-	0% {
-		left: 0;
-	}
-	20% {
-		left: 0;
-	}
-	20% {
-		left: -100%;
-	}
-	45% {
-		left: -100%;
-	}
-	50% {
-		left: -200%;
-	}
-	70% {
-		left: -200%;
-	}
-	75% {
-		left: -300%;
-	}
-	95% {
-		left: -300%;
-	}
-	100% {
-		left: -400%;
-	}
-
-
-}
-
-.image-section{
-    grid-area: section-gallery;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-}
-
-.image-section .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.image-section .box .set{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-}
-
-.image-section .box .set img{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 15px;
-    border-radius: 9px;
-    background-color: white;
-    padding: 10px;
-    box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: -3px -3px 5px 0px rgba(0,0,0,0.25);
 }
 
 .other{
@@ -296,6 +180,199 @@ header{
     color: #006946;
     transform: scale(1.1);
     transition: 0.3s ease all;
+}
+
+.intro{
+    grid-area: intro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    margin: 80px;
+}
+
+.intro .text{
+    margin-top:150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro .text h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 240%;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.festival{
+    grid-area: section1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.festival .festival-container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.festival .festival-container .image-festival{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+}
+.festival .festival-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.festival h1{
+    text-align: left;
+    color: #006946;
+    margin-bottom: 20px;
+}
+
+.festival p{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+.link-images{
+    grid-area: link;
+    margin: 30px;
+    position: relative;
+    top: 10%;
+}
+
+.row-images{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.image{
+    background: #006946;
+    position: relative;
+    flex: 1;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.image img{
+    opacity: 0.9;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s all ease;
+    transition-property: opacity;
+    backdrop-filter: blur(5px);
+}
+
+.image:hover img{
+    opacity: 1;
+}
+
+.image .texts{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.image .texts h2{
+    text-align: center;
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition-property: transform;
+    transition: 0.6s all ease;
+}
+
+.image .texts h2 span{
+    font-weight: 900;
+}
+
+.image:hover .texts h2{
+    transform: translateY(-30px);
+}
+
+.image .texts p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 11pt;
+    font-weight: 600;
+    margin: 30px 30px 0 30px;
+    transition-property: transform, opacity;
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+
+.image:hover .texts p{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    flex: 100%;
+    max-width: 480px;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    bottom: 30%;
+    transition: 0.9s all ease;
+    opacity: 0;
+    transition-property: bottom, opacity;
+}
+
+.link .more{
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.link .more:hover{
+    background-color: white;
+    color: #006946;
+}
+
+.image:hover .link{
+    bottom: 0;
+    opacity: 1;
 }
 
 footer{
@@ -348,25 +425,19 @@ footer div p{
         min-height: 70px;
     }
 
-    .barline{
-        width: 320px;
-        height: 3px;
+    .intro .text h2{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20pt;
+        text-align: center;
     }
     
-    .section1 div h2{
+    .image .texts h2{
         font-size: 20pt;
     }
 
-    .slider-section{
-        grid-area: slider;
-        position: relative;
-        margin: 30px;
-        width: 500px;
-    }
-
-    .slider figure img {
-        width: 20%;
-        height: 40vh;
+    .image .texts p{
+        font-size: 15pt;
     }
 
     footer{
@@ -376,6 +447,13 @@ footer div p{
 
 /*design for desktop*/
 @media screen and (min-width:1200px) {
+    body{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    .section1{
+        scroll-snap-align: start;
+    }
 
     .logo{
         margin: 20px 30px;
@@ -409,6 +487,12 @@ footer div p{
         font-size: 10pt;
     }
     
+    nav ul li:hover{
+        color: white;
+        transform: scale(1.1);
+        transition: all ease 0.3s;
+    }
+    
     header{
         height: 10vh;
         min-height: 110px;
@@ -423,43 +507,21 @@ footer div p{
         transition: 0.3s all ease;
     }
 
-    .image-section .box{
-        flex-direction: row;
-    }
-    
-    .image-section .box .set{
-        width: 32.5%;
+    .intro .text h2{
+        font-size: 30pt;
     }
 
-    .image-section .box .set img:hover{
-        transform: scale(1.1);
-        transition: all ease 0.3s;
+    .image .texts h2{
+        font-size: 30pt;
     }
 
-    .barline{
-        width: 560px;
-        height: 3px;
-    }
-    
-    .section1 div h2{
-        font-size: 40pt;
-        text-align: center;
-    }
-
-    .slider-section{
-        grid-area: slider;
-        position: relative;
-        margin: 30px;
-        width: 700px;
-    }
-    .slider figure img {
-        width: 20%;
-        height: 60vh;
+    .festival .festival-container img{
+    width: 75%;
+    height: 90%;
+    border-radius: 10px;
     }
 
     footer{
         height: 500%;
-    }
-
-    
+    }   
 }

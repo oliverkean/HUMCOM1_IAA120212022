@@ -144,7 +144,7 @@ header{
  transition: 0.3s;
 }
 
-.schedule{
+.other{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -152,14 +152,14 @@ header{
     margin: 20px;
 }
 
-.schedule:hover{
+.other:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
     transition: 0.3s ease all;
 }
 
-.mobile_menu .schedule_mobile{
+.mobile_menu .other_mobile{
     background-color: #006946;
     color: black;
     padding: 15px;
@@ -168,7 +168,7 @@ header{
     top: 20px;
 }
 
-.mobile_menu .schedule_mobile:hover{
+.mobile_menu .other_mobile:hover{
     background-color: white;
     color: #006946;
     transform: scale(1.1);
@@ -195,7 +195,7 @@ header{
 }
 
 .section1 h1, p{
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,7 +223,7 @@ header{
     font-style: normal;
     font-family: 'Arial', sans-serif;
     color: black;
-    text-align: justify;
+    text-align: left;
 }
 
 .section2 article p b{
